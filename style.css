@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Mulish", sans-serif;
+    font-weight: 400;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-image: url(https://images.pexels.com/photos/167684/pexels-photo-167684.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-position: center;
+    transition: all 2s, opacity 400ms;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 460px;
+    height: 360px;
+    background-color: #323232;
+    border-radius: 18px;
+    opacity: 0.9;
+    padding: 16px;
+    gap: 12px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+   
+}
+
+.container input {
+    font-size: 26px;
+    padding: 8px 18px;
+    border: none;
+    border-radius: 30px;
+    
+}
+
+.container input:focus {
+    background-color: #525252;
+    color: #fff;
+}
+
+nav button {
+    border: none;
+    border-radius: 25px;
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    background-color: #323232;
+}
+
+nav button:hover {
+    background-color: #525252;
+}
+
+nav i {
+    font-size: 28px;
+}
+
+.city {
+    margin-left: 18px;
+    color: #fff;
+    font-weight: 700;
+    gap: 20px;
+}
+
+.grau {
+    display: flex;
+    align-items: end;
+    font-size: 22px;
+    margin: 0px 0 18px 0;
+    color: gold;
+    gap: 8px;
+}
+
+.min {
+    color: aqua;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    gap: 12px;
+}
+
+.footer {
+    margin-top: auto;
+    padding: 2px;
+    align-self: center;
+    color: #fff;
+    text-shadow: 0 0 #323232;
+}
+
+main a{
+    color: #fff;
+    
+}
+
+footer {
+    color: #fff;
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: absolute;
+    opacity: 0.92;
+    top: 90%;
+    left: 5%;
+}
+
+footer a {
+    color: #fff;
+    opacity: 0.92;
+}
+
+@media screen and (max-width: 570px) {
+    .container {
+        width: fit-content;
+        margin: 0 22px;
+        height: fit-content;
+        padding: 12px;
+    }
+
+    nav {
+        justify-content: space-around;
+    }
+
+    nav input{
+        width: 250px;
+    }
+
+    .grau {
+        flex-direction: column;
+        align-items: self-start;
+    }
+
+}
+
